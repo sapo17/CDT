@@ -21,11 +21,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # add the executable
-add_executable(${PROJECT_NAME} 
+add_library(${PROJECT_NAME} STATIC
     src/giftWrap.cpp
     src/PLC.cpp
     src/delaunay.cpp
-    src/main.cpp
 )
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
